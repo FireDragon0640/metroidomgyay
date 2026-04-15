@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"ifyouseethistheboiledoneisafrteyou",
+  "%Name":"jonaswuzhere",
   "eventList":[],
   "managed":true,
-  "name":"ifyouseethistheboiledoneisafrteyou",
+  "name":"jonaswuzhere",
   "overriddenProperties":[],
   "parent":{
     "name":"aaaa",

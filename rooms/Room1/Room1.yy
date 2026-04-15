@@ -13,8 +13,8 @@
   ],
   "name":"Room1",
   "parent":{
-    "name":"BLANK GAME",
-    "path":"BLANK GAME.yyp",
+    "name":"aaaa",
+    "path":"aaaa.yyp",
   },
   "parentRoom":null,
   "physicsSettings":{
