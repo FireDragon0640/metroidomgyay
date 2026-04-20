@@ -1,6 +1,6 @@
 {
   "$GMProject":"v1",
-  "%Name":"metroidv1.0.1",
+  "%Name":"metroidv1.1.0",
   "AudioGroups":[
     {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -33,13 +33,16 @@
   "MetaData":{
     "IDEVersion":"2024.14.4.222",
   },
-  "name":"metroidv1.0.1",
+  "name":"metroidv1.1.0",
   "resources":[
+    {"id":{"name":"obj_beam","path":"objects/obj_beam/obj_beam.yy",},},
+    {"id":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"snd_player_jump","path":"sounds/snd_player_jump/snd_player_jump.yy",},},
     {"id":{"name":"NES___Metroid___Playable_Characters___Samus_Aran__Power_Suit_","path":"sprites/NES___Metroid___Playable_Characters___Samus_Aran__Power_Suit_/NES___Metroid___Playable_Characters___Samus_Aran__Power_Suit_.yy",},},
+    {"id":{"name":"spr_beam","path":"sprites/spr_beam/spr_beam.yy",},},
     {"id":{"name":"spr_player_airborne","path":"sprites/spr_player_airborne/spr_player_airborne.yy",},},
     {"id":{"name":"spr_player_ball","path":"sprites/spr_player_ball/spr_player_ball.yy",},},
     {"id":{"name":"spr_player_midair_roll","path":"sprites/spr_player_midair_roll/spr_player_midair_roll.yy",},},
