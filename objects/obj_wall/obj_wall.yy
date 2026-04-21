@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_wall_none",
-    "path":"sprites/spr_wall_none/spr_wall_none.yy",
+    "name":"spr_brinstar",
+    "path":"sprites/spr_brinstar/spr_brinstar.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,6 +1,10 @@
+// --- MOVEMENT ---
+
 var _key_right = keyboard_check(ord("D"));
 var _key_left = keyboard_check(ord("A"));
 var _key_jump = keyboard_check(vk_space) || keyboard_check(ord("W"));
+
+var _key_point_up = keyboard_check(vk_up);
 
 // movement calc
 hsp = (_key_right - _key_left) * walksp;
@@ -51,33 +55,56 @@ if (place_meeting(x, y + vsp, obj_wall))
 }
 y += vsp;
 
-/// ANIMATIONS
+// checks and adjusts shooting data for sprites and other
+if (is_shooting) {
+	if (since_last_shot++ > 40) {
+		is_shooting = false;
+	}
+}
 
-// if player airborne, switch to airborne sprite
+shooting_upward = bool(_key_point_up);
+show_debug_message(shooting_upward);
+
+
+
+// MAIN SPRITE HANDLER
+
 if (!place_meeting(x,y+1,obj_wall))
 {
+	// AIRBORNE sprites
 	
 	// handles rolling
-	if (sign(hsp) != 0) {
-		sprite_index = spr_player_midair_roll
-		image_speed = 1;
-	} else {
-		sprite_index = spr_player_airborne
-		image_speed = 0;
-	}
+	// (SCRAPPED FOR NOW, VERY EASY THOUGH, JUST CHECK IF SIGN OF HSP IS NOT 0)
+	
+	//if (sign(hsp) != 0) {
+		// airborne rolling
+		//sprite_index = spr_player_midair_roll
+		//image_speed = 1;
+	//} else {
+		// normal goes here
+	//}
+	
+	sprite_index = spr_player_airborne
+	image_speed = 0;
+	
+	if (_key_point_up) image_index = 2; else if (is_shooting) image_index = 1; else image_index = 0;
 	
 }
-else
+else // NOT AIRBORNE sprites (normal walking)
 {
 	// otherwise, check if we need to set it to the running sprite
 	image_speed = 1;
 	if hsp == 0
 	{
+		
 		sprite_index = spr_player;
+		if (_key_point_up) image_index = 2; else if (is_shooting) image_index = 1; else image_index = 0;
 	}
 	else 
 	{
-		sprite_index = spr_player_run
+		if (_key_point_up) sprite_index = spr_player_run_pointing;
+		else
+		if (is_shooting) sprite_index = spr_player_run_shooting; else sprite_index = spr_player_run
 	}
 }
 
