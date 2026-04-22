@@ -1,4 +1,7 @@
 // inits variables
+hp = 5;
+invulnerable = false;
+
 grv = 0.3;
 hsp = 0;
 vsp = 0;

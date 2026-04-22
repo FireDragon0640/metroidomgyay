@@ -26,6 +26,8 @@ if (can_jump-- > 0) && (_key_jump)
 // x collision
 if (place_meeting(x + hsp, y, obj_wall))
 {
+	if !other.layer == layer_get_id("Walls") return
+	
 	// while there is still a significant gap between player and wall
 	while (abs(hsp) > 0.1)
 	{
@@ -42,6 +44,7 @@ x += hsp;
 // y collisions
 if (place_meeting(x, y + vsp, obj_wall))
 {
+	
 	// if going down, this implies a floor, reset can_jump
 	if (vsp > 0) can_jump = 10;
 	
@@ -63,7 +66,7 @@ if (is_shooting) {
 }
 
 shooting_upward = bool(_key_point_up);
-show_debug_message(shooting_upward);
+
 
 
 
