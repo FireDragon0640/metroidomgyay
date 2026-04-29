@@ -26,7 +26,6 @@ if (can_jump-- > 0) && (_key_jump)
 // x collision
 if (place_meeting(x + hsp, y, obj_wall))
 {
-	if !other.layer == layer_get_id("Walls") return
 	
 	// while there is still a significant gap between player and wall
 	while (abs(hsp) > 0.1)
@@ -113,3 +112,13 @@ else // NOT AIRBORNE sprites (normal walking)
 
 // sprite direction
 if (hsp != 0) image_xscale = sign(hsp) * scale;
+
+
+
+// win condition
+if place_meeting(x, y, obj_game_win) and obj_game_over.game_over = false {
+	show_debug_message("touched thing");
+	obj_game_over.won = true;
+	obj_game_over.final_hp = hp;
+	obj_game_over.game_over = true;
+}

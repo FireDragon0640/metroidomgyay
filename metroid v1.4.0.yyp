@@ -1,6 +1,6 @@
 {
   "$GMProject":"v1",
-  "%Name":"metroidv1.2.0",
+  "%Name":"metroid v1.4.0",
   "AudioGroups":[
     {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -33,12 +33,17 @@
   "MetaData":{
     "IDEVersion":"2024.14.4.222",
   },
-  "name":"metroidv1.2.0",
+  "name":"metroid v1.4.0",
   "resources":[
+    {"id":{"name":"font0_1","path":"fonts/font0_1/font0_1.yy",},},
+    {"id":{"name":"font0","path":"fonts/font0/font0.yy",},},
     {"id":{"name":"obj_beam","path":"objects/obj_beam/obj_beam.yy",},},
     {"id":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},},
+    {"id":{"name":"obj_game_over","path":"objects/obj_game_over/obj_game_over.yy",},},
+    {"id":{"name":"obj_game_win","path":"objects/obj_game_win/obj_game_win.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_ripper","path":"objects/obj_ripper/obj_ripper.yy",},},
+    {"id":{"name":"obj_skree","path":"objects/obj_skree/obj_skree.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"damage_player","path":"scripts/damage_player/damage_player.yy",},},
@@ -59,6 +64,9 @@
     {"id":{"name":"spr_player_run","path":"sprites/spr_player_run/spr_player_run.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_ripper","path":"sprites/spr_ripper/spr_ripper.yy",},},
+    {"id":{"name":"spr_skree_ball","path":"sprites/spr_skree_ball/spr_skree_ball.yy",},},
+    {"id":{"name":"spr_skree","path":"sprites/spr_skree/spr_skree.yy",},},
+    {"id":{"name":"Sprite18","path":"sprites/Sprite18/Sprite18.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
